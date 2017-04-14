@@ -1,8 +1,59 @@
+
+
+/* FONT LOCATIONS
+-------------------------------------------------- */
+@font-face {
+    font-family: "myfirstfont";
+    src: url(fonts/Exo2-Thin.otf) format("opentype");
+}
+
+@font-face {
+    font-family: "mysecondfont";
+    src: url(fonts/Exo2-Regular.otf) format("opentype");
+}
+
+/* FONTS
+-------------------------------------------------- */
+html * {
+  font-family: "myfirstfont", "Helvetica", Times;
+}
+
+
 /* NAVBAR
 -------------------------------------------------- */
 
 .navbar {
   margin-bottom: 0;
+}
+
+
+/* HEADER
+-------------------------------------------------- */
+
+.header {
+  height: 400px;
+  width: 100%;
+  background: rgba(10, 10, 10, 0.5);
+  background-image: url("images/computer.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.headercontent {
+  /*background-color: rgba(10, 10, 10, 0.5);*/
+  display: inline-block;
+  padding: 20px;
+  color: white;
+}
+
+.header h1 {
+  font-size: 70pt;
+}
+
+.header h2 {
+  font-size: 45pt;
+
 }
 
 /* CUSTOMIZED CAROUSEL
@@ -17,6 +68,11 @@
 .carousel-caption {
   z-index: 10;
 }
+
+.carousel-caption h1 {
+  color: rgba(60, 191, 246, 1);
+}
+
 
 /* Declare heights because of positioning of img element */
 .carousel .item {
@@ -42,11 +98,13 @@
 
 }
 
+
+
 /* MARKETING
 -------------------------------------------------- */
 
 .marketing {
-  margin: 60px auto;
+  margin: 110px auto;
 }
 
 .marketing .col-md-4 {
@@ -57,11 +115,53 @@
 .marketing .col-md-4 .glyphicon {
   font-size: 60px;
   background-color: #EAEAEA;
-  border-radius: 50%;
+  border-radius: 15%;
   padding: 40px;
-  color: #444;
+  color: rgba(60, 191, 246, 1);
+
 }
 
+.marketing .col-md-8 {
+
+}
+
+.marketing .col-md-4 {
+  
+}
+
+/* SKILLS
+-------------------------------------------------- */
+
+.skills {
+  height: 350px;
+  width: 100%;
+  background: rgba(150, 150, 150, 1);
+  background: #444;
+  padding: 40px 0;
+}
+
+
+.skills h3 {
+  /*background: rgba(10, 10, 10, 0.5); rgba(60, 191, 246, 1); */
+  font-size: 25pt;
+  display: block;
+  text-align: center;
+  color: rgba(60, 191, 246, 1);
+}
+
+.skills p {
+  font-size: 17pt;
+  color: white;
+  margin: 20pt;
+  margin-left: 30pt;
+}
+
+.skills li {
+  font-size: 14pt;
+  margin-left: 30pt;
+  color: white;
+  list-style-type: none;
+}
 
 /* STICKY FOOTER
 -------------------------------------------------- */
